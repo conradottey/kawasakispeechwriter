@@ -1,5 +1,6 @@
 #speech writer app Intro
 
+
 def topics_count
 	print "How many points? >>";@points = gets.chomp
 end
@@ -12,8 +13,19 @@ def announce
 	puts concat 
 end
 
+def work_intro
+	intros = ["A little more about my background ","It all began when ","In the beginning of my professional career "].sample
+	# intros.sample
+end
+
 def work_hist
-	puts "A little more about my background"
+	# work_intro
+	company = "SmartDraw" 
+	length_of_time = "10 years"
+	puts work_intro+ "I worked at #{company} for about #{length_of_time}"
+
+
+
 
 end
 
@@ -36,16 +48,17 @@ end
 
 def format_of_talk
 
+end
 
 
 
 
 
 
+work_intro
 announce
 work_hist
 
-format
 topics_count
 length_joke(@points)
 
